@@ -1,6 +1,7 @@
 // lib/app/routes/app_pages.dart
 import 'package:get/get.dart';
 import '../../modules/auth/auth_controller.dart';
+import '../../modules/splash/splash_view.dart';
 import '../../modules/auth/login/login_view.dart';
 import '../../modules/auth/register/register_view.dart';
 import '../../modules/auth/forgot_password/forgot_password_view.dart';
@@ -13,6 +14,10 @@ import 'app_routes.dart';
 
 class AppPages {
   static final pages = [
+    GetPage(
+      name: AppRoutes.splash,
+      page: () => const SplashView(),
+    ),
     GetPage(
       name: AppRoutes.login,
       page: () => const LoginView(),
